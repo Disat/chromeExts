@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "135Helper",
+    "version": "1.0",
+    "description": "Build an Extension!",
+    "permissions":["https://www.135editor.com/"],
+    "content_scripts":[{
+        "matches": ["https://www.135editor.com/"],
+        "js": ["addDiv.js"]
+    }]
+
+}
