@@ -1,11 +1,16 @@
 {
   "manifest_version": 2,
-  "name": "atguigu",
+  "name": "myCleaner",
   "version": "1.0.0",
-  "description": "atguiguCleaner",
+  "description": "myCleaner",
   "content_scripts": [
     {
-      "matches": ["http://www.atguigu.com/*"],
+      "matches": [
+        "http://www.atguigu.com/*",
+        "https://my.oschina.net/*",
+        "https://blog.csdn.net/*",
+        "https://www.zhihu.com/*"
+      ],
       "js": ["cleaner.js"],
       "run_at": "document_end"
     }
